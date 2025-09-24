@@ -1,0 +1,227 @@
+parallel-jobs = 1
+compression-level = 9
+remove-rv-integrations-checks = true
+enable-magisk-update = true
+
+rv-brand = "by h1toru"
+
+cli-source = "j-hc/revanced-cli"
+cli-version = "latest"
+
+patches-source = "revanced/revanced-patches"
+patches-version = "dev"
+
+# cli-source = "j-hc/revanced-cli"
+# cli-source = "inotia00/revanced-cli"
+
+# patches-source = "revanced/revanced-patches"
+# patches-source = "inotia00/revanced-patches"
+# patches-source = "anddea/revanced-patches"
+
+# https://github.com/MANCrimSon/YouTube-ReVanced-Extended
+# https://github.com/NoName-exe/revanced-extended
+
+#========== YouTube ==========#
+
+[YouTube-Premium]
+enabled = false
+app-name = "YouTube Premium"
+# rv-brand = "Extended"
+build-mode = "apk"
+version = "auto"
+arch = "both"
+riplib = true
+module-prop-name = "h1toru-rvm-yt"
+
+# patches-source = "anddea/revanced-patches"
+patcher-args = """\
+  -e 'Change version code' \
+  -e 'Custom branding name for YouTube' -OappName='YouTube Premium' \
+  -d 'Custom branding icon for YouTube' \
+  -e 'GmsCore support' -OpackageNameYouTube='h1toru.rvb.yt' \
+  -e 'Settings for YouTube' -OrvxSettingsLabel='Extended' \
+  -e 'Return YouTube Username' \
+  -d 'Enable gradient loading screen' \
+  -d 'Alternative thumbnails' \
+  -d 'Enable debug logging' \
+  """
+
+apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube"
+uptodown-dlurl = "https://youtube.en.uptodown.com/android"
+
+[YouTube-Premium-Module]
+enabled = true
+app-name = "YouTube Premium"
+# rv-brand = "Extended"
+build-mode = "both"
+version = "auto"
+arch = "all"
+riplib = false
+module-prop-name = "h1toru-rvm-yt"
+
+patches-source = "anddea/revanced-patches"
+patches-version = "dev"
+
+patcher-args = """\
+  --rip-lib x86_64 --rip-lib x86 \
+  -e 'Change version code' \
+  -e 'Custom branding name for YouTube' -OappName='YouTube Premium' \
+  -d 'Custom branding icon for YouTube' -d 'Custom header for YouTube' \
+  -e 'GmsCore support' -OpackageNameYouTube='h1toru.rvm.yt' \
+  -e 'Settings for YouTube' -OrvxSettingsLabel='Premium options' \
+  -e 'Return YouTube Username' \
+  \
+  -d 'Custom double tap length' \
+  -d 'Enable gradient loading screen' \
+  -d 'Alternative thumbnails' \
+  -d 'Translations for YouTube' \
+  -d 'Enable debug logging' \
+  """
+
+# apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube"
+# uptodown-dlurl = "https://youtube.en.uptodown.com/android"
+archive-dlurl = "https://archive.org/download/core-apks/apks/com.google.android.youtube"
+
+[YouTube-Extended]
+enabled = false
+app-name = "YouTube Extended"
+# rv-brand = "Extended"
+build-mode = "apk"
+version = "auto"
+arch = "both"
+riplib = true
+module-prop-name = "h1toru-rvm-yt"
+
+# patches-source = "anddea/revanced-patches"
+patcher-args = """\
+  -e 'Change version code' \
+  -e 'Custom branding name for YouTube' -OappName='YouTube Extended' \
+  -e 'Custom branding icon for YouTube' -OappIcon='mmt' \
+  -e 'GmsCore support' -OpackageNameYouTube='h1toru.rvb.yt.ext' \
+  -e 'Settings for YouTube' -OrvxSettingsLabel='Extended' \
+  -e 'Return YouTube Username' \
+  -d 'Enable gradient loading screen' \
+  -d 'Alternative thumbnails' \
+  -d 'Enable debug logging' \
+  """
+
+apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube"
+uptodown-dlurl = "https://youtube.en.uptodown.com/android"
+
+[YouTube-Extended-Module]
+enabled = false
+app-name = "YouTube Extended"
+# rv-brand = "Extended"
+build-mode = "both"
+version = "auto"
+arch = "all"
+riplib = true
+module-prop-name = "h1toru-rvm-yt"
+
+# patches-source = "anddea/revanced-patches"
+patcher-args = """\
+  -e 'Change version code' \
+  -e 'Custom branding name for YouTube' -OappName='YouTube Extended' \
+  -e 'Custom branding icon for YouTube' -OappIcon='mmt' \
+  -e 'GmsCore support' -OpackageNameYouTube='h1toru.rvb.yt.ext' \
+  -e 'Settings for YouTube' -OrvxSettingsLabel='Extended' \
+  -e 'Return YouTube Username' \
+  -d 'Enable gradient loading screen' \
+  -d 'Alternative thumbnails' \
+  -d 'Enable debug logging' \
+  """
+
+apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube"
+uptodown-dlurl = "https://youtube.en.uptodown.com/android"
+
+#========== YouTube Music ==========#
+
+[YTMusic-Premium]
+enabled = false
+app-name = "YTMusic Premium"
+# rv-brand = "Extended"
+build-mode = "both"
+version = "auto"
+arch = "both"
+riplib = true
+module-prop-name = "h1toru-rvm-ytm"
+
+# patches-source = "inotia00/revanced-patches"
+patcher-args = """\
+  -e 'Change version code' \
+  -e 'Custom branding name for YouTube Music' -OappNameLauncher='YTMusic Premium' -OappNameNotification='YTMusic Premium' \
+  -d 'Custom branding icon for YouTube Music' \
+  -e 'GmsCore support' -OpackageNameYouTubeMusic='h1toru.rvb.ytm' \
+  -e 'Settings for YouTube Music' -OrvxSettingsLabel='Extended' \
+  -e 'Disable music video in album' \
+  -e 'Return YouTube Username' \
+  -d 'Enable debug logging' \
+  """
+
+apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube-music"
+uptodown-dlurl = "https://youtube-music.en.uptodown.com/android"
+
+[YTMusic-Extended]
+enabled = false
+app-name = "YTMusic Extended"
+# rv-brand = "Extended"
+build-mode = "both"
+version = "auto"
+arch = "both"
+riplib = true
+module-prop-name = "h1toru-rvm-ytm"
+
+# patches-source = "inotia00/revanced-patches"
+patcher-args = """\
+  -e 'Change version code' \
+  -e 'Custom branding name for YouTube Music' -OappNameLauncher='YTMusic Extended' -OappNameNotification='YTMusic Extended' \
+  -e 'Custom branding icon for YouTube Music' -OappIcon='mmt' \
+  -e 'GmsCore support' -OpackageNameYouTubeMusic='h1toru.rvb.ytm.ext' \
+  -e 'Settings for YouTube Music' -OrvxSettingsLabel='Extended' \
+  -e 'Disable music video in album' \
+  -e 'Return YouTube Username' \
+  -d 'Enable debug logging' \
+  """
+
+apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube-music"
+uptodown-dlurl = "https://youtube-music.en.uptodown.com/android"
+
+#========== Spotify ==========#
+
+[Spotify-Patched-arm]
+enabled = false
+app-name = "Spotify Patched arm"
+# rv-brand = "Patched"
+version = "auto"
+arch = "all"
+riplib = false
+
+patches-source = "anddea/revanced-patches"
+patches-version = "dev"
+
+patcher-args = """\
+  --rip-lib x86_64 --rip-lib x86 --rip-lib arm64-v8a \
+  -d 'Lyrics search' \
+  """
+
+uptodown-dlurl = "https://spotify.en.uptodown.com/android"
+archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.spotify.music"
+
+[Spotify-Patched-arm64]
+enabled = false
+app-name = "Spotify Patched"
+# rv-brand = "Patched"
+version = "auto"
+arch = "all"
+riplib = false
+
+patches-source = "anddea/revanced-patches"
+patches-version = "dev"
+
+patcher-args = """\
+  --rip-lib x86_64 --rip-lib x86 --rip-lib armeabi-v7a \
+  -d 'Lyrics search' \
+  """
+  
+uptodown-dlurl = "https://spotify.en.uptodown.com/android"
+archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.spotify.music"
