@@ -55,7 +55,7 @@ app-name = "YouTube Premium"
 # rv-brand = "Extended"
 build-mode = "both"
 version = "auto"
-arch = "all"
+arch = "both"
 riplib = false
 module-prop-name = "h1toru-rvm-yt"
 
