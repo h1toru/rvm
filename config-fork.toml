@@ -23,7 +23,7 @@ patches-version = "dev"
 
 #========== YouTube ==========#
 
-[YouTube-Premium-Apk]
+[YouTube-Premium]
 enabled = true
 app-name = "YouTube Premium"
 # rv-brand = ""
@@ -229,7 +229,7 @@ patcher-args = """\
 uptodown-dlurl = "https://spotify.en.uptodown.com/android"
 archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.spotify.music"
 
-[Spotify-Patched]
+[Spotify]
 enabled = true
 app-name = "Spotify"
 # rv-brand = ""
