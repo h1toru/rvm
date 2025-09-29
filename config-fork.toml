@@ -211,8 +211,8 @@ uptodown-dlurl = "https://youtube-music.en.uptodown.com/android"
 
 [Spotify-Patched-arm]
 enabled = false
-app-name = "Spotify Patched arm"
-# rv-brand = "Patched"
+app-name = "Spotify Patched"
+# rv-brand = ""
 version = "auto"
 arch = "all"
 riplib = false
@@ -222,18 +222,19 @@ patches-version = "dev"
 
 patcher-args = """\
   --rip-lib x86_64 --rip-lib x86 --rip-lib arm64-v8a \
+  -e 'Custom theme' \
   -d 'Lyrics search' \
   """
 
 uptodown-dlurl = "https://spotify.en.uptodown.com/android"
 archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.spotify.music"
 
-[Spotify-Patched-arm64]
-enabled = false
-app-name = "Spotify Patched"
-# rv-brand = "Patched"
+[Spotify-Patched]
+enabled = true
+app-name = "Spotify"
+# rv-brand = ""
 version = "auto"
-arch = "all"
+arch = "arm64-v8a"
 riplib = false
 
 patches-source = "anddea/revanced-patches"
@@ -241,8 +242,9 @@ patches-version = "dev"
 
 patcher-args = """\
   --rip-lib x86_64 --rip-lib x86 --rip-lib armeabi-v7a \
+  -e 'Custom theme' \
   -d 'Lyrics search' \
   """
-  
+
 uptodown-dlurl = "https://spotify.en.uptodown.com/android"
 archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.spotify.music"
