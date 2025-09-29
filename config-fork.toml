@@ -46,10 +46,13 @@ patcher-args = """\
   -e 'Settings for YouTube' -OrvxSettingsLabel='Premium options' -OinsertPosition='About' \
   -e 'Theme' -OdarkThemeBackgroundColor='#000000' -OlightThemeBackgroundColor='#FFFFFF' \
   \
+  -e 'Return YouTube Dislike' \
   -e 'Return YouTube Username' \
+  -e 'SponsorBlock' \
+  -d 'Alternative thumbnails' \
   -d 'Enable debug logging' \
   -d 'Translations for YouTube' \
-  -d 'Alternative thumbnails' \
+  -d 'Set Transcript Cookies' \
   -d 'Disable layout updates' \
   -d 'Spoof app version' \
   -d 'Enable gradient loading screen' \
@@ -86,10 +89,13 @@ patcher-args = """\
   -e 'Settings for YouTube' -OrvxSettingsLabel='Premium options' -OinsertPosition='About' \
   -e 'Theme' -OdarkThemeBackgroundColor='#000000' -OlightThemeBackgroundColor='#FFFFFF' \
   \
+  -e 'Return YouTube Dislike' \
   -e 'Return YouTube Username' \
+  -e 'SponsorBlock' \
+  -d 'Alternative thumbnails' \
   -d 'Enable debug logging' \
   -d 'Translations for YouTube' \
-  -d 'Alternative thumbnails' \
+  -d 'Set Transcript Cookies' \
   -d 'Disable layout updates' \
   -d 'Spoof app version' \
   -d 'Enable gradient loading screen' \
