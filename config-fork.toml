@@ -23,41 +23,15 @@ patches-version = "dev"
 
 #========== YouTube ==========#
 
-[YouTube-Premium]
-enabled = false
+[YouTube-Premium-Apk]
+enabled = true
 app-name = "YouTube Premium"
 # rv-brand = "Extended"
 build-mode = "apk"
 version = "auto"
 arch = "both"
-riplib = true
-module-prop-name = "h1toru-rvm-yt"
-
-# patches-source = "anddea/revanced-patches"
-patcher-args = """\
-  -e 'Change version code' \
-  -e 'Custom branding name for YouTube' -OappName='YouTube Premium' \
-  -d 'Custom branding icon for YouTube' \
-  -e 'GmsCore support' -OpackageNameYouTube='h1toru.rvb.yt' \
-  -e 'Settings for YouTube' -OrvxSettingsLabel='Extended' \
-  -e 'Return YouTube Username' \
-  -d 'Enable gradient loading screen' \
-  -d 'Alternative thumbnails' \
-  -d 'Enable debug logging' \
-  """
-
-apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube"
-uptodown-dlurl = "https://youtube.en.uptodown.com/android"
-
-[YouTube-Premium-Module]
-enabled = true
-app-name = "YouTube Premium"
-# rv-brand = "Extended"
-build-mode = "both"
-version = "auto"
-arch = "both"
 riplib = false
-module-prop-name = "h1toru-rvm-yt"
+# module-prop-name = "h1toru-rvm-yt"
 
 patches-source = "anddea/revanced-patches"
 patches-version = "dev"
@@ -66,7 +40,8 @@ patcher-args = """\
   --rip-lib x86_64 --rip-lib x86 \
   -e 'Change version code' \
   -e 'Custom branding name for YouTube' -OappName='YouTube Premium' \
-  -d 'Custom branding icon for YouTube' -d 'Custom header for YouTube' \
+  -d 'Custom branding icon for YouTube' \
+  -d 'Custom header for YouTube' \
   -e 'GmsCore support' -OpackageNameYouTube='h1toru.rvm.yt' \
   -e 'Settings for YouTube' -OrvxSettingsLabel='Premium options' \
   -e 'Return YouTube Username' \
@@ -81,6 +56,40 @@ patcher-args = """\
 # apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube"
 # uptodown-dlurl = "https://youtube.en.uptodown.com/android"
 archive-dlurl = "https://archive.org/download/core-apks/apks/com.google.android.youtube"
+
+[YouTube-Premium-Module]
+enabled = true
+app-name = "YouTube Premium"
+# rv-brand = "Extended"
+build-mode = "module"
+version = "auto"
+arch = "both"
+riplib = false
+module-prop-name = "h1toru-rvm-yt"
+
+patches-source = "anddea/revanced-patches"
+patches-version = "dev"
+
+patcher-args = """\
+  --rip-lib x86_64 --rip-lib x86 --rip-lib arm64-v8a --rip-lib armeabi-v7a --unsigned \
+  -e 'Change version code' \
+  -e 'Custom branding name for YouTube' -OappName='YouTube Premium' \
+  -d 'Custom branding icon for YouTube' \
+  -d 'Custom header for YouTube' \
+  -d 'GmsCore support' -OpackageNameYouTube='h1toru.rvm.yt' \
+  -e 'Settings for YouTube' -OrvxSettingsLabel='Premium options' \
+  -e 'Return YouTube Username' \
+  \
+  -d 'Custom double tap length' \
+  -d 'Enable gradient loading screen' \
+  -d 'Alternative thumbnails' \
+  -d 'Translations for YouTube' \
+  -d 'Enable debug logging' \
+  """
+
+apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube"
+# uptodown-dlurl = "https://youtube.en.uptodown.com/android"
+# archive-dlurl = "https://archive.org/download/core-apks/apks/com.google.android.youtube"
 
 [YouTube-Extended]
 enabled = false
