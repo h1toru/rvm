@@ -1,3 +1,4 @@
+Spotify-Patched: 9.0.76.1115  
 YouTube-Premium-Apk (arm64-v8a): 20.05.46  
 YouTube-Premium-Apk (arm-v7a): 20.05.46  
 YouTube-Premium-Module (arm64-v8a): 20.05.46  
