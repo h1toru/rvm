@@ -8,5 +8,5 @@ non-root: Install [MicroG](https://github.com/ReVanced/GmsCore/releases) or [Mic
 root: Use [zygisk-detach](https://github.com/j-hc/zygisk-detach) to detach root YouTube and YT Music from Play Store
   
 CLI: j-hc/revanced-cli-5.0.0-all.jar  
-Patches: anddea/patches-3.14.0-dev.6.rvp  
-[Patches Changelog](https://github.com/anddea/revanced-patches/releases/tag/v3.14.0-dev.6)  
+Patches: anddea/patches-3.14.0-dev.9.rvp  
+[Patches Changelog](https://github.com/anddea/revanced-patches/releases/tag/v3.14.0-dev.9)  
