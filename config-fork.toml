@@ -215,9 +215,9 @@ uptodown-dlurl = "https://youtube-music.en.uptodown.com/android"
 
 #========== Spotify ==========#
 
-[Spotify-Patched-arm]
+[Spotify-arm]
 enabled = false
-app-name = "Spotify Patched"
+app-name = "Spotify arm"
 # rv-brand = ""
 version = "auto"
 arch = "all"
@@ -233,13 +233,13 @@ patcher-args = """\
   """
 
 uptodown-dlurl = "https://spotify.en.uptodown.com/android"
-archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.spotify.music"
+# archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.spotify.music"
 
 [Spotify]
 enabled = true
 app-name = "Spotify"
 # rv-brand = ""
-version = "auto"
+version = "9.1.2.1253"
 arch = "arm64-v8a"
 riplib = false
 
@@ -253,4 +253,26 @@ patcher-args = """\
   """
 
 uptodown-dlurl = "https://spotify.en.uptodown.com/android"
-archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.spotify.music"
+# archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.spotify.music"
+
+[Instagram]
+enabled = false
+app-name = "Instagram"
+# rv-brand = ""
+version = "auto"
+arch = "arm64-v8a"
+riplib = false
+
+patches-source = "anddea/revanced-patches"
+patches-version = "dev"
+
+patcher-args = """\
+  --rip-lib x86_64 --rip-lib x86 --rip-lib armeabi-v7a \
+  -e 'Disable signature check' \
+  -e 'Sanitize sharing links' \
+  -e 'Enable developer menu' \
+  -e 'Hide ads' \
+  -e 'Limit feed to followed profiles' \
+  """
+
+archive-dlurl = "https://archive.org/download/core-apks/apks/com.instagram.android-MyInsta"
