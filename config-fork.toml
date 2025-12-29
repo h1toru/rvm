@@ -99,7 +99,7 @@ apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube-music"
 enabled = true
 app-name = "Spotify"
 # rv-brand = ""
-version = "auto"
+version = "9.1.6.1145"
 arch = "arm64-v8a"
 riplib = false
 
@@ -138,16 +138,13 @@ uptodown-dlurl = "https://spotify.en.uptodown.com/android"
 
 #========== Instagram ==========#
 
-[Instagram]
-enabled = false
-app-name = "Instagram"
+[MyInsta-arm64]
+enabled = true
+app-name = "MyInsta-v26.0"
 # rv-brand = ""
-version = "auto"
+version = "364.0.0.35.86"
 arch = "arm64-v8a"
 riplib = false
-
-patches-source = "anddea/revanced-patches"
-patches-version = "dev"
 
 patcher-args = """\
   --rip-lib x86_64 --rip-lib x86 --rip-lib armeabi-v7a \
@@ -158,7 +155,7 @@ patcher-args = """\
   -e 'Limit feed to followed profiles' \
   """
 
-archive-dlurl = "https://archive.org/download/core-apks/apks/com.instagram.android-MyInsta"
+archive-dlurl = "https://archive.org/download/core-apks/com.instagram.android-MyInsta"
 
 #========== Notes ==========#
 
